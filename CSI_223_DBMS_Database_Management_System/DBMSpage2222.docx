@@ -1,0 +1,295 @@
+Sql Server Dba Interview Questions And Answers Pdf
+Are you looking for SQL Server Dba Interview Questions for Fresher’s or experienced? You are at accurate place. There are loads of chances from various reputed corporations in the business. According to analysis, SQL Server Dba has a business share of around 1.6%. So, you, however, have a chance to move forward in your career in SQL Server Dba Development. To achieve the desired job as SQL Server Dba Developer you need to go through the advanced topic in SQL Server Dba Interview Questions 2018 provided by SVR Technologies.
+
+Top 50 Sql Server Dba Interview Questions And Answers Pdf
+
+SQL Server programs on-demand IT Pros, and Developers and drive your experiences to a new level. By our selection of SQL Server Online Training occasions, you can see how to execute and control database explications, operate with great reporting innovations and recognize how SQL Server combines with SharePoint. SVR Technologies give SQL Server training online at your registered time, you can choose classes where, when, and how it accommodates you the best.
+
+Here is the top 50 objective standard model SQL Server Dba Interview questions and their answers are provided just underneath to them. Some sample questions are included by masters from SVR Technologies who guides for What Is SQL Server Dba to deliver you a conception of the nature of questions which may be asked in an interview. We have taken complete care to provide accurate answers to all the questions.
+
+1. What is BCP? When does it use? 
+Answer: BulkCopy is a tool used to copy huge amount of data from tables and views. BCP does not copy the structures same as source to destination. BULK INSERT command helps to import a data file into a database table or view in a user-specified format.
+
+2. When would you use it?
+Answer: An execution plan is basically a road map that graphically or textually shows the data retrieval methods chosen by the SQL Server query optimizer for a stored procedure or ad- hoc query and is a very useful tool for a developer to understand the performance characteristics of a query or stored procedure since the plan is the one that SQL Server will place in its cache and use to execute the stored procedure or query. From within Query Analyzer is an option called “Show Execution Plan” (located on the Query drop-down menu). If this option is turned on it will display a query execution plan in a separate window when the query is run again.
+
+3. How to implement one-to-one, one-to-many and many-to-many relationships while designing tables?
+Answer:
+
+The one-to-one relationship can be implemented as a single table and rarely as two tables with primary and foreign key relationships.
+
+One-to-Many relationships are implemented by splitting the data into two tables with primary key and foreign key relationships.
+
+Many-to-Many relationships are implemented using a junction table with the keys from both the tables forming the composite primary key of the junction table.
+
+4. Explain primary key in Sql Server?
+Answer: This is the combination of fields/columns which are used to uniquely specify a row. Primary Key has a unique constraint defined on the column and the value in the column cannot be NULL.
+
+5. Explain foreign key in Sql Server?
+Answer: Foreign key is used to establish a relationship between the columns of another table. Foreign key relationship to be created between two tables by referencing a column of the table to the primary key of another table.
+
+6. What are the difference between “Where” and “Having” clause in Sql Server?
+Answer: “Where” clause is used to filter the rows based on condition. “Having” clause used with SELECT clause and this is used with GROUP BY clause. If GROUP BY clause not used then “HAVING” clause works like a “WHERE” clause. Top 50 Sql Server Dba Interview Questions And Answers Pdf
+
+7. What are Magic Tables in SQL Server?
+Answer: The MAGIC tables are automatically created and dropped, in case you use TRIGGERS. SQL Server has two magic tables named, INSERTED and DELETED
+
+These are maintained by SQL server for there Internal processing. When we use update insert or delete on tables these magic tables are used. These are not physical tables but are Internal tables. Whenever we use insert statement is fired the Inserted table is populated with newly inserted Row and whenever delete statement is fired the Deleted table is populated with the delete drow. But in case of update statement is fired both Inserted and Deleted table used for records the Original row before updation get store in the Deleted table and new row Updated get store in Inserted table.
+
+8. List out the different types of locks available in Sql Server?
+Answer: Below is the list of locks available in Sql Server –
+
+Update Locks
+Shared Locks
+Exclusive Locks
+9. What is a recursive stored procedure in Sql Server?
+Answer: A recursive stored procedure is the stored procedure called a child stored procedure inside the parent or main stored procedure. This can be done easily in Sql Server by using “EXEC” keyword in a stored procedure.
+
+For Example
+
+Create Procedure SP_Test
+AS
+BEGIN
+EXEC sp_Child @params
+END
+
+10. How the authentication mode can be changed?
+Answer: Authentication mode can be changed using the following steps –
+Start -> Programs -> Microsoft SQL Server -> “SQL Enterprise Manager” and run SQL Enterprise Manager.
+
+11. What are the new features in SQL Server 2005 when compared to SQL Server 2000?
+Answer: There are quite a lot of changes and enhancements in SQL Server 2005. Few of them are listed here :
+
+Database Partitioning
+Dynamic Management Views
+System Catalog Views
+Resource Database
+Database Snapshots
+SQL Server Integration Services
+Support for Analysis Services on a Failover Cluster.
+Profiler being able to trace the MDX queries of the Analysis Server.
+Peer-to-Peer Replication
+Database Mirroring
+12. How to get @@ERROR and @@ROWCOUNT at the same time?
+Answer: If @@Rowcount is checked after Error checking statement then it will have 0 as the value of @@Recordcount as it would have been reset. And if @@Recordcount is checked before the error-checking statement then @@Error would get reset. To get @@error and @@rowcount at the same time do both in the same statement and store them in local variable.
+
+13. Explain Sql server authentication modes?
+Answer: Below are the two authentication modes of sql server –
+
+Mixed Mode
+Windows Mode
+14. What does man by SQL Wildcard Characters in Sql Server?
+Answer: WildCard Characters are used with “LIKE” operator in Sql Server. Wildcards are used for data retrieval process from the table. Some of the wildcards are
+
+“-“ – This is used for substituting a single character.
+“%” – This is used for substituting zero or more characters.
+[list of chars] – Ranges of characters for matching.
+
+15. Explain Indexing and what are the advantages of it?
+Answer: Indexing contains pointers to the data in a table. Indexes are created in a table to retrieve the data quickly. So Indexing improves the performance as the retrieval of data takes less time. Indexing will be done for columns which are being used more often while retrieving.
+
+16. Explain “NOT NULL Constraint” in Sql Server?
+Answer: “NOT NULL Constraint” is used in a column to make sure the value in the column is not null. If this constraint has not set then by default columns will accept NULL values too.
+
+17. Why use Sub Query in Sql Server and List out types of Sub Queries?
+Answer: Sub Queries are queries within a query. The parent or outer query is being called as the main query and the inner query is called as inner query or subquery. Different types of Sub Queries are
+
+Correlated – It is not an independent subquery. It is an inner query which is referred by the outer query.
+Non-Correlated – It is an independent subquery. It can be executed even without an outer query.
+18. What are user-defined functions (UDFs) in Sql Server?
+Answer: User-Defined functions are being used to handle complex queries.
+
+There are two types of user-defined functions –
+
+Scalar – This type of functions are used for returning a single scalar value.
+Table-Valued – This type of function are used for returning a table which has a list of rows. Sql supports data type called table which is used here for returning a table.
+19. List out the difference between Union and Union All in Sql Server?
+Answer: Union is used to combine all result sets and it removes the duplicate records from the final result set obtained, unlike Union All which returns all the rows irrespective of whether rows are being duplicated or not.
+Union checks the number of columns given in the SELECT statement should be equal or not and the datatypes are also should be same and same applied to UnionAll.
+
+20. Explain “@@ROWCOUNT” and “@@ERROR” in Sql Server?
+Answer: @@ROWCOUNT – Used to return the number of rows affected in the table due to the last statement.
+@@ERROR – Used to return the error code which is occurred due to the last SQL statement. ‘0’ means there are no errors.
+
+21. Why use Cursor in Sql Server?
+Answer: The cursor is used in case of row traversal. This can be considered as a pointer pointing to one row at a time in the list of rows. Cursors can be used for retrieval, removal or addition of records in a table.
+
+22. List all types of constraints in Sql Server?
+Answer:
+Below is the list of constraints in Sql Server –
+
+NOT NULL
+DEFAULT
+CHECK
+PRIMARY KEY
+FOREIGN KEY
+UNIQUE
+23. Why use IDENTITY in Sql Server?
+Answer: IDENTITY is used for a column to auto increment the value of the column in a table and it is mainly used with Primary Key.
+
+24. What are the differences between Union, Intersect, and Minus operators?
+Answer: 
+
+Union operator is used to combining all the results or records of the table and it removes the duplicate values.
+Interact operator is used to returning the common list of records between two result sets.
+Minus operator is used to getting the list of records from the first result set and which is not there in the second result set.
+25. Explain “ROW_NUMBER()” in Sql Server with an example?
+Answer: “ROW_NUMBER()” is used to return a sequential number of each row within a given partition. “1” will be the first position. “Partition By” and “Order By” can be used along with “ROW_NUMBER()”. Below is the example for the same
+SELECT ROW_NUMBER() OVER(ORDER BY EmpSalary DESC) AS Row FROM Employees WHERE Emp Name Name IS NOT NULL
+
+26. What are the differences between “ROW_NUMBER()”, “RANK()” and “DENSE_RANK()”?
+Answer: “ROW_NUMBER” – Used to return a sequential number of each row within a given partition.
+“RANK” – Used to returns a new row number for each distinct row in the result set and it will leave a number gap in case of duplicates.
+“DENSE_RANK” – Used to returns a new row number for each distinct row in the result set and it will not leave any number gap in case of duplicates.
+
+27. Explain about Link Server in Sql Server?
+Answer: Linked Server is used to enable execution of OLEDB data sources in remote servers. With Linked servers, we can create easy SQL statements which will allow remote data to be joined, combined and retrieved with data in local.
+
+28. What are the advantages of user-defined functions over stored procedures in Sql Server?
+Answer: User-Defined functions can be used in SELECT/WHERE/HAVING clauses whereas stored procedure cannot be called. In the case of table-valued functions, the returned Table.
+
+29. Why use “NoLock” in Sql Server?
+Answer: “No Lock” is used for unlocking the rows which are locked by some other transaction. Once after the rows are committed or rolled back no need to use No Lock. For example.
+
+30. What is the significance of master, tempdb and model databases?
+Answer:
+
+master – This database will have data and catalog of all the databases of SQL Server instance.
+tempdb – tempdb database will have temporary objects like local and global temporary tables and stored procedures as well.
+the model – model database is mainly used for creating new user databases.
+31. Explain about unique identifier data type in Sql Server?
+Answer: Unique Identifier datatype mainly used for primary key columns of the tables or any other columns which need to have unique Ids. “NEWID()” function can be used for generating a unique identifier for the column. Unique Identifiers are also named as GUIDs.
+
+32. Why use “PIVOT” in Sql Server?
+Answer: Pivot table automatically count, sort and total the data in a table or spreadsheet and used to create a separate table for displaying summarized data.
+
+33. Explain Alternate key, Candidate Key and Composite Key in Sql Server?
+Answer:
+
+Alternate Key – To identify a row uniquely we can have multiple keys one of them is called primary key and rest of them are called alternate keys.
+Candidate Key – Set of fields or columns which are uniquely identified in a row and they constitute candidate keys.
+Composite Key – One key formed by combining at least two or more columns or fields.
+34. How to use “DROP” keyword in Sql Server and Give an example?
+Answer: “DROP” keyword is used to drop either Index or database or table. Below is a list of Sql statements using Drop keyword.
+
+Dropping Index
+DROP INDEX my_index
+Dropping Database
+DROP DATABASE my_database
+Dropping Table
+DROP TABLE my_table
+deleted when the connection that created it is closed.
+
+35. Can SQL servers link to other servers?
+Answer: SQL server can be joined to any database which owns OLE-DB provider to provide a link. Example: Oracle holds OLE-DB provider which has a link to unite among the SQL server club.
+
+36. What are subquery and its properties?
+Answer:
+
+A subquery is a query which can be nested inside the main query like Select, Update, Insert or Delete statements. This can be used when the expression is allowed. Properties of the subquery can be defined as.
+A sub query should not have ordered by clause.
+A subquery should be placed in the right-hand side of the comparison operator of the main query.
+A subquery should be enclosed in parenthesis because it needs to be executed first before the main query.
+More than one subquery can be included.
+37. What are the kinds of subquery?
+Answer: There are 3 kinds of subquery –
+
+The query which returns only one row is Single row subquery.
+Which returns multiple row is a multiple-row subquery.
+Which returns multiple columns to the main query is multiple-column subqueries. Beside that subquery returns, the Chief query will be performed.
+38. What is the SQL server agent?
+Answer: The SQL Server agent performs an active role in day to day duties of SQL server manager (DBA). Server agent’s goal is to achieve the jobs simply with the scheduler motor which provides our jobs to work at proposed date and time.
+
+39. What are scheduled tasks in SQL Server?
+Answer: Scheduled jobs are practiced to automate methods that can be operated on a cataloged event at a constant interval. This scheduling of jobs benefits to decrease human interference throughout the night time and feed can be produced at an appropriate time. A user can further order the jobs in which it allows to be produced.
+
+40. What is COALESCE in SQL Server?
+Answer: COALESCE is used to return the first non-null expression within the arguments. This function is used to return a non-null from more than one column in the arguments.
+
+41. If you are given access to a SQL Server, how do you find if the SQL Instance is a named instance or a default instance?
+Answer: I would go to the SQL Server Configuration Manager. In the left pane of the tool, I would select SQL Server Services, the right side pane displays all of the SQL Server Services/components that are installed on that machine. If the Service is displayed as (MSSQLSERVER), then it indicates it is a default instance, else there will be the Instance name displayed.
+
+42. What structure can you implement for the database to speed up table reads?
+Answer :
+A) Follow the rules of DB tuning we have to:
+
+properly use indexes ( different types of indexes)
+properly locate different DB objects across different tablespaces, files and so on.
+create a special space (tablespace) to locate some of the data with special datatype ( for example CLOB,
+43. What are statistics, under what circumstances they go out of date, how do you update them?
+Answer: A) Statistics determine the selectivity of the indexes. If an indexed column has unique values then the selectivity of that index is more, as opposed to an index with non-unique values. The query optimizer uses these indexes in determining whether to choose an index or not while executing a query.
+
+Some situations under which you should update statistics:
+
+If there is a significant change in the key values in the index.
+If a large amount of data in an indexed column has been added, changed, or removed (that is if the distribution of key values has changed), or the table has been truncated using the TRUNCATE TABLE statement and then repopulated.
+The database is upgraded from a previous version Q) Could you please some items which you may see in an execution plan indicating the query is not optimized.
+Index Scan or Table Scan.
+Hash Joins.
+Thick arrows (indicating large work tables).
+Parallel streams (Parallelism).
+Bookmark lookup (or key lookup).
+44. In what sequence SQL statement is processed?
+Answer: The clauses of the select are processed in the following sequence
+
+FROM clause
+WHERE clause
+GROUP BY clause
+HAVING clause
+SELECT clause
+ORDER BY clause
+TOP clause
+45. Can we add an identity column to decimal datatype?
+Answer: YES, SQL Server support this
+
+What is the difference between LEFT JOIN with WHERE clause & LEFT JOIN with nowhere clause?
+OUTER LEFT/RIGHT JOIN with WHERE clause can act like an INNER JOIN if not used wisely or logically.
+
+46. What is meant by Active – Passive and Active-Active clustering setup?
+Answer: 
+
+An Active- Passive cluster is a failover cluster configured in a way that only one cluster node is active at any given time. The other node, called as Passive node is always online but in an idle condition, waiting for a failure of the Active Node, upon which the Passive Node takes over the SQL Server Services and this becomes the Active Node, the previous Active Node now being a Passive Node.
+
+An Active-Active cluster is a failover cluster configured in a way that both the cluster nodes are active at any given point of time. That is, one Instance of SQL Server is running on each of the nodes always; when one of the nodes has a failure, both the Instances run on the only one node until the failed node is brought up (after fixing the issue that caused the node failure). The instance is then failed over back to its designated node.
+
+47. How do you generate file output from SQL?
+Answer: While using SQL Server Management Studio or Query Analyzer, we have an option in Menu BAR. QUERTY >> RESULT TO >> Result to FILE
+
+How do you prevent SQL Server from giving you informational messages during and after a SQL statement execution?
+SET NOCOUNT OFF
+
+48. What is the importance of a recovery model?
+Answer :
+Primarily, the recovery model is chosen keeping in view the amount of data loss one can afford to. If one expects to have minimal or no data loss, choosing the Full recovery model is a good choice. Depending on the recovery model of a database, the behavior of database log file changes. I would recommend you read more material on log backups and log file behavior and so on to understand in depth.
+
+49. What is Index, cluster index and nonclustered index?
+Answer: 
+
+Clustered Index:- A Clustered index is a special type of index that reorders the way records in the table are physically stored. Therefore the table may have only one clustered index.
+
+Non-Clustered Index:- A Non-Clustered index is a special type of index in which the logical order of the index does not match the physical stored order of the rows in the disk. The leaf nodes of a non-clustered index do not consist of the data pages. instead, the leaf node contains index rows.
+
+Write down the general syntax for a SELECT statement covering all the options.
+Here’s the basic syntax: (Also checkout SELECT in books online for advanced syntax).
+50. What are the different authentication modes in SQL Server and how can you change authentication mode?
+Answer: SQL Server has 2 Authentication modes; Windows Authentication and SQL Server and Windows Authentication mode also referred to as Mixed Mode. To change the Authentication mode, read one of my blogs Changing SQL Server Authentication Mode.
+
+Note: Browse latest  SQL Interview Questions and SQL Tutorial. Here you can check  SQL Server Training details and  SQL Videos for self learning. Contact +91 988 502 2027 for more information.
+
+
+
+https://hackr.io/blog/top-sql-interview-questions
+
+
+
+https://www.softwaretestinghelp.com/sql-server-interview-question-for-testers-2/
+
+
+https://www.simplilearn.com/tutorials/sql-tutorial/sql-server-interview-questions
+
+
+
+https://mindmajix.com/sql-server-interview-questions
+
+
+

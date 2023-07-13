@@ -1,0 +1,3 @@
+select @@SERVERNAME
+select @@version ;
+
